@@ -4,7 +4,8 @@
 
 * PHP 8.2 ou superior
 * Composer
-* NOde JS 20 ou superior
+* Node JS 20 ou superior
+* MySQL 8.0 ou superior
 
 ## Como rodar o projeto baixado
 
@@ -19,6 +20,16 @@ composer create-project laravel/laravel .
 Iniciar o projeto criado com Laravel
 ```
 php artisan serve
+```
+
+Instalar as bibliotecas Node.js
+```
+npm install
+```
+
+Rodar as bibliotecas Node.js
+```
+npm run dev
 ```
 
 Acessar o conteúdo padrão do Laravel

@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\App;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,11 +14,30 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // Seeds que devem rodam em Produção
+        if(App::environment() == 'production'){
+            $this->call([
+                StatusSeeder::class,
+                UserSeeder::class,
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+                CourseStatusSeeder::class,
+
+            ]);
+        }
+
+        // Seeds que devem rodam em qualquer ambiente
+        if(App::environment() !== 'production'){
+            $this->call([
+                StatusSeeder::class,
+                UserSeeder::class,
+
+                CourseStatusSeeder::class,
+                CourseSeeder::class,
+                CourseBatchSeeder::class,
+                ModuleSeeder::class,
+                LessonSeeder::class,
+            ]);
+        }
+
     }
 }
