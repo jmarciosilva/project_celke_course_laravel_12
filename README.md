@@ -1,2 +1,61 @@
-# project_celke_course_laravel_12
-Projeto de exemplo para estudo da versão 12 do Laravel
+# Projeto para estudo e aprendizagem do Laravel na Versão 12
+
+## Requisitos
+
+* PHP 8.2 ou superior
+* Composer
+* NOde JS 20 ou superior
+
+## Como rodar o projeto baixado
+
+
+## Sequência para criar o projeto
+
+Criar o projeto com Laravel
+```
+composer create-project laravel/laravel .
+```
+
+Iniciar o projeto criado com Laravel
+```
+php artisan serve
+```
+
+Acessar o conteúdo padrão do Laravel
+```
+http://127.0.0.1:8000
+```
+
+## Como enviar e baixar os arquivos do GitHub
+
+- Criar um repositório **"project-laravel-12"** no GitHub por exemplo
+- Criar uma branch **"develop"** no repositório - para você subir o código em desenvolvimento e nunca quebrar o código de produção
+
+Baixar os arquivos do Git
+```
+git clone --branch <nome_da_branch> <nome_da_url_repositorio> .
+```
+
+Alterar o Usuário Globalmente para todos os repositórios
+```
+git config --global user.name "SeuNomeDeUsuario"
+git config --global user.email "seuemail@examplo.com"
+```
+
+Verificar em qual branch você está
+```
+git branch
+```
+
+Baixar as atualizações do GitHub
+```
+git pull
+```
+
+Adicionar todos os arquivos modificados
+```
+git add .
+```
+
+## Autor
+Este projeto foi desenvolvido por José Márcio Ferreira da Silva
