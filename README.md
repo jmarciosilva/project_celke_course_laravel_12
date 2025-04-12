@@ -57,5 +57,16 @@ Adicionar todos os arquivos modificados
 git add .
 ```
 
+Para fazer o commit que representa as alterações que vc realizou na história de desenvolvimento do seu projeto
+```
+git commit -m "Base do projeto Laravel 12"
+```
+
+Enviando os commits locais para o repositório do GitHub
+```
+git push <remote> <branch> - exenplo
+git push origin develop
+```
+
 ## Autor
 Este projeto foi desenvolvido por José Márcio Ferreira da Silva
